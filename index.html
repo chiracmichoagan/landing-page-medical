@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>Medical Research</title>
+</head>
+
+<body>
+
+
+  <!-- L'entête du site  -->
+  <header class="py-8 lg:pt-6 lg:pb-14">
+
+    <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
+
+      <!-- logo du site   -->
+      <div class="flex justify-center lg:justify-normal">
+        <a href="#">
+          <img src="assets/img/header/Medical_Research_logo.png" width="60" height="50" alt="logo" />
+        </a>
+      </div>
+
+      <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-10">
+
+        <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+          <i class="ri-map-pin-2-fill text-2xl text-accent"></i>
+          <div class="text-secondary">Cotonou, Littoral Bénin, BP rue 6412524</div>
+        </div>
+
+
+        <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+          <i class="ri-phone-fill text-2xl text-accent"></i>
+          <div class="text-secondary">(229) 0153947916</div>
+        </div>
+
+        <!-- Button Planifiez -->
+        <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0">Planifiez maintenant!</button>
+
+
+        <!-- Navbar mobile -->
+        <nav id="nav-mobile" class="mnav bg-white fixed w-[300px] top-0 h-screen 
+                -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20">
+
+          <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center 
+                    items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all">
+            <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+          </div>
+
+          <div class="px-12 flex flex-col gap-y-12 h-full">
+            <a href="#">
+              <img src="/assets/img/header/Medical_Research_logo.png" width="60" height="50" alt="logo">
+            </a>
+
+            <ul class="flex flex-col gap-y-5">
+              <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Acceuil</a></li>
+              <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Médecins</a>
+              </li>
+              <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Départements</a>
+              </li>
+              <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Services</a>
+              </li>
+              <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Blog</a></li>
+              <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Contact</a>
+              </li>
+            </ul>
+
+            <form class="relative flex gap-x-[10px]">
+              <label for="">
+                <i class="ri-search-line text-2xl text-accent"></i>
+              </label>
+              <input type="text" id="mnav-search-input" placeholder="Rechercher..."
+                class="outline-none w-[160px] focus:border-b-2 focus:border-accent placeholder:italic">
+            </form>
+          </div>
+        </nav>
+
+        <!-- Navbar desktop -->
+        <nav id="nav-desktop" class="bg-white absolute w-full left-0 -bottom-[86px] 
+                shadow-custom1 h-16 rounded-[10px] hidden lg:flex  lg:items-center lg:justify-between lg:px-[50px]">
+          <ul class="flex gap-x-4">
+            <li><a href="#"
+                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Acceuil</a>
+            </li>
+            <li><a href="#"
+                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Médecins</a>
+            </li>
+            <li><a href="#"
+                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Départements</a>
+            </li>
+            <li><a href="#"
+                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Services</a>
+            </li>
+            <li><a href="#" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Blog</a>
+            </li>
+            <li><a href="#" class="text-secondary hover:text-accent transition-all duration-300">Contact</a>
+            </li>
+          </ul>
+
+          <form class="relative flex gap-x-[10px]">
+            <label for="search-input" class="flex justify-center items-center group">
+              <i class="ri-search-line text-2xl text-accent"></i>
+            </label>
+            <input type="text" name="" id="search-input" placeholder="Rechercher..." class="outline-none w-[100px] 
+                        focus:w-[180px] focus:border-b-2 focus:border-accent
+                        placeholder:italic placeholder:text-base transition-all duration-150">
+          </form>
+        </nav>
+
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <section class="hero bg-grey py-12 xl:pt-12 xl:pb-12 overflow-hidden">
+    <div class="container mx-auto">
+      <div class="flex flex-col xl:flex-row items-center justify-between h-full">
+        <div class="heroText xl:w-[48%] text-center xl:text-left">
+
+          <div class="flex items-center bg-white py-[10px] px-[20px] 
+                    w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0">
+
+            <i class="ri-heart-pulse-line text-2xl text-accent"></i>
+            <div class="uppercase text-base font-medium text-[#9ab4b7] tracking-[2.24px]">
+              Vivez votre vie !
+            </div>
+          </div>
+
+          <h1 class="h1 mb-6">Votre santé nous tient à cœur.</h1>
+          <p class="mb-[42px] md:max-w-xl">Votre santé est un trésor précieux qui mérite toute notre attention.
+
+            Dans notre clinique, nous comprenons l'importance de prendre soin de votre bien-être. Notre équipe de
+            médecins dévoués et spécialisés est à votre disposition pour vous offrir des soins personnalisés, axés sur
+            votre santé physique et mentale. Préservez votre bien le plus précieux : votre santé. Laissez-nous vous
+            accompagner dans cette démarche.
+
+            Contactez-nous et découvrez comment nous pouvons vous aider à vivre une vie plus saine et plus épanouie.</p>
+          <button class="btn btn-lg btn-accent mx-auto xl:mx-0">Contactez-nous</button>
+        </div>
+
+        <div class="heroImg hidden xl:flex max-w-[814px] self-end">
+          <img src="/assets/img/hero/image_une_fille_medecin-png.png" alt="doctor-1">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="stats section">
+    <div class="container mx-auto">
+      <div class="flex flex-col xl:flex-row gap-y-6 justify-between">
+        <div class="statsItem flex-1 xl:border-r flex flex-col items-center">
+          <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary">+5120</div>
+          <div>Des patients heureux</div>
+        </div>
+
+        <div class="statsItem flex-1 xl:border-r flex flex-col items-center">
+          <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary">+26</div>
+          <div>filiale</div>
+        </div>
+
+        <div class="statsItem flex-1 xl:border-r flex flex-col items-center">
+          <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary">+53</div>
+          <div>Les sceptiques expérimentés</div>
+        </div>
+
+        <div class="statsItem flex-1 flex flex-col items-center">
+          <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary">+10</div>
+          <div>Années d'expérience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="bg-services bg-cover bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px]
+        xl:pt-[70px] px-6 xl:px-0 relative h-[368px] flex items-center xl:items-start -z-10">
+      <div class="container mx-auto">
+        <div class="serviceTop flex items-center flex-col xl:flex-row xl:mb-[60px]">
+          <h2 class="h2 text-white flex-1 mb-4 xl:mb-0 text-center xl:text-left">Le meilleur service pour votre solution
+            !</h2>
+          <p class="text-white flex-1 text-center xl:text-left max-w-2xl xl:max-w-none">
+            Votre santé est un trésor précieux qui mérite toute votre attention. Donnez la priorité à votre bien le plus
+            précieux :
+
+            votre santé, et laissez-nous vous accompagner dans cette démarche.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto mt-8 xl:-mt-[144px]">
+      <div class="xl:grid xl:grid-cols-4 xl:gap-5 px-0 xl:px-8">
+        <div class="servicesItem bg-white p-[30px] rounded-[10px] 
+                    shadow-custom2 flex flex-col items-center text-center">
+
+          <div class="md-[15px]">
+            <img src="assets/icons/services/icon-1.svg" alt="icon-1">
+          </div>
+
+          <h3 class="h3 mb-[10px]">Pratiques générales</h3>
+          <p class="font-light leading-normal max-w-[300px]">Loasdadrem ipsum dolor, sit amet consectetur
+            adipisicing elit.</p>
+        </div>
+
+        <div class="servicesItem bg-white p-[30px] rounded-[10px] 
+                    shadow-custom2 flex flex-col items-center text-center">
+
+          <div class="md-[15px]">
+            <img src="assets/icons/services/icon-2.svg" alt="icon-1">
+          </div>
+
+          <h3 class="h3 mb-[10px]">Un accompagnement efficace</h3>
+          <p class="font-light leading-normal max-w-[300px]">Loasdadrem ipsum dolor, sit amet consectetur
+            adipisicing elit.</p>
+        </div>
+
+        <div class="servicesItem bg-white p-[30px] rounded-[10px] 
+                    shadow-custom2 flex flex-col items-center text-center">
+
+          <div class="md-[15px]">
+            <img src="assets/icons/services/icon-3.svg" alt="icon-1">
+          </div>
+
+          <h3 class="h3 mb-[10px]">Soutien nutritionnel</h3>
+          <p class="font-light leading-normal max-w-[300px]">Loasdadrem ipsum dolor, sit amet consectetur
+            adipisicing elit.</p>
+        </div>
+
+        <div class="servicesItem bg-white p-[30px] rounded-[10px] 
+                    shadow-custom2 flex flex-col items-center text-center">
+
+          <div class="md-[15px]">
+            <img src="assets/icons/services/icon-4.svg" alt="icon-1">
+          </div>
+
+          <h3 class="h3 mb-[10px]">Pharmacie générale</h3>
+          <p class="font-light leading-normal max-w-[300px]">Loasdadrem ipsum dolor, sit amet consectetur
+            adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+
+    <div class="container mx-auto">
+      <h2 class="appointmentTitle h2 mb-5 xl:mb-[50px] text-center xl:text-left">Appelez pour prendre rendez-vous.
+        <span class="text-accent-tertiary">(229) 0153947916</span>
+      </h2>
+
+
+      <form class="appointmentForm flex flex-col gap-y-5">
+        <div class="flex flex-col xl:flex-row gap-5">
+          <div class="select relative flex items-center">
+            <div class="absolute right-4">
+              <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+            </div>
+            <select class="appearance-none outline-none h-full bg-transparent px-4">
+              <option value="1">Sélectionnez le département</option>
+              <option value="2">Département 1</option>
+              <option value="3">Département 2</option>
+              <option value="4">Département 3</option>
+            </select>
+          </div>
+
+          <div class="select relative flex items-center">
+            <div class="absolute right-4">
+              <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+            </div>
+            <select class="appearance-none outline-none h-full bg-transparent px-4">
+              <option value="1">Sélectionnez le Médecin</option>
+              <option value="2">Médecin 1</option>
+              <option value="3">Médecin 2</option>
+              <option value="4">Médecin 3</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="flex flex-col xl:flex-row gap-5">
+          <input type="text" class="input" placeholder="Nome completo">
+          <input type="text" class="input" placeholder="Telefone">
+        </div>
+
+        <div class="flex flex-col xl:flex-row gap-5">
+          <input class="input" type="date">
+          <input class="input" type="time">
+        </div>
+
+        <button class="btn btn-lg btn-accent self-start" type="submit">Planifier un rendez-vous</button>
+
+      </form>
+    </div>
+  </section>
+
+  <section class="testimonials bg-testimonials bg-cover bg-right bg-no-repeat py-12 xl:min-h-[595px] xl:py-0">
+    <div class="testimonialContainer container mx-auto">
+      <div class="flex flex-col items-center gap-x-14 xl:flex-row">
+
+        <div class="hidden xl:flex">
+          <img src="assets/img/testimonials/img.png" alt="testimonials">
+        </div>
+
+        <div class="max-w-[98%] xl:max-w-[710px]">
+
+          <div class="swiper h-[400px]">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="h-full flex flex-col justify-center items-start">
+                  <div class="max-w-[680px] mx-auto text-center xl:text-left">
+
+                    <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left
+                                        before:bg-quoteLeft before:bg-contain before:bg-bottom before:inline-block before:top-0
+                                        before:w-10 before:h-10 before:bg-no-repeat
+                                        after:bg-quoteRight after:bg-contain after:bg-bottom after:inline-block after:top-0
+                                        after:w-10 after:h-10 after:bg-no-repeat">
+                      <span class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolor aut eveniet, ratione non sit dolorum, rem pariatur iste ipsum
+                        tempore minus explicabo? Eligendi, accusamus cupiditate. </span>
+                    </p>
+                    <div class="text-[26px] text-[#4c5354] font-semibold">Chirac Dona</div>
+                    <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">
+                      Gestor de RH
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="h-full flex flex-col justify-center items-start">
+                  <div class="max-w-[680px] mx-auto text-center xl:text-left">
+
+                    <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left
+                                        before:bg-quoteLeft before:bg-contain before:bg-bottom before:inline-block before:top-0
+                                        before:w-10 before:h-10 before:bg-no-repeat
+                                        after:bg-quoteRight after:bg-contain after:bg-bottom after:inline-block after:top-0
+                                        after:w-10 after:h-10 after:bg-no-repeat">
+                      <span class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolor aut eveniet, ratione non sit dolorum, rem pariatur iste ipsum
+                        tempore minus explicabo? Eligendi, accusamus cupiditate. </span>
+                    </p>
+                    <div class="text-[26px] text-[#4c5354] font-semibold">Camélia </div>
+                    <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">
+                      Analista
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="h-full flex flex-col justify-center items-start">
+                  <div class="max-w-[680px] mx-auto text-center xl:text-left">
+
+                    <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left
+                                        before:bg-quoteLeft before:bg-contain before:bg-bottom before:inline-block before:top-0
+                                        before:w-10 before:h-10 before:bg-no-repeat
+                                        after:bg-quoteRight after:bg-contain after:bg-bottom after:inline-block after:top-0
+                                        after:w-10 after:h-10 after:bg-no-repeat">
+                      <span class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolor aut eveniet, ratione non sit dolorum, rem pariatur iste ipsum
+                        tempore minus explicabo? Eligendi, accusamus cupiditate. </span>
+                    </p>
+                    <div class="text-[26px] text-[#4c5354] font-semibold">Ricardo Boya</div>
+                    <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">
+                      Diretor
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-20 pb-20">
+    <div class="container mx-auto">
+      <h2 class="faqTitle h2 text-center mb-[50px]">Questions fréquentes ????</h2>
+      <div class="max-w-5xl mx-auto">
+
+        <div class="faqItem px-[30px] pt-7 pb-4 border-b cursor-pointer select-none">
+
+          <div class="flex items-center justify-between mb-[10px]">
+            <h4 class="h4">Lorem ipsum, dolor sit amet consectetur adipisicing elit?</h4>
+            <div class="faqBtn text-accent">
+              <i class="ri-add-fill text-2xl"></i>
+            </div>
+          </div>
+
+          <div class="faqText h-0 overflow-hidden transition-all duration-200 ease-in-out">
+            <p class="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt
+              perferendis vero tempore voluptates, aliquid magnam, aspernatur et delectus veritatis
+              distinctio doloribus, beatae praesentium? Nihil explicabo blanditiis possimus libero
+              aspernatur veritatis id aliquam sunt commodi dicta quod, dolorem error quis!</p>
+          </div>
+        </div>
+
+        <div class="faqItem px-[30px] pt-7 pb-4 border-b cursor-pointer select-none">
+
+          <div class="flex items-center justify-between mb-[10px]">
+            <h4 class="h4">Lorem ipsum, dolor sit amet consectetur adipisicing elit?</h4>
+            <div class="faqBtn text-accent">
+              <i class="ri-add-fill text-2xl"></i>
+            </div>
+          </div>
+
+          <div class="faqText h-0 overflow-hidden transition-all duration-200 ease-in-out">
+            <p class="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt
+              perferendis vero tempore voluptates, aliquid magnam, aspernatur et delectus veritatis
+              distinctio doloribus, beatae praesentium? Nihil explicabo blanditiis possimus libero
+              aspernatur veritatis id aliquam sunt commodi dicta quod, dolorem error quis!</p>
+          </div>
+        </div>
+
+        <div class="faqItem px-[30px] pt-7 pb-4 border-b cursor-pointer select-none">
+
+          <div class="flex items-center justify-between mb-[10px]">
+            <h4 class="h4">Lorem ipsum, dolor sit amet consectetur adipisicing elit?</h4>
+            <div class="faqBtn text-accent">
+              <i class="ri-add-fill text-2xl"></i>
+            </div>
+          </div>
+
+          <div class="faqText h-0 overflow-hidden transition-all duration-200 ease-in-out">
+            <p class="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt
+              perferendis vero tempore voluptates, aliquid magnam, aspernatur et delectus veritatis
+              distinctio doloribus, beatae praesentium? Nihil explicabo blanditiis possimus libero
+              aspernatur veritatis id aliquam sunt commodi dicta quod, dolorem error quis!</p>
+          </div>
+        </div>
+
+        <div class="faqItem px-[30px] pt-7 pb-4 border-b cursor-pointer select-none">
+
+          <div class="flex items-center justify-between mb-[10px]">
+            <h4 class="h4">Lorem ipsum, dolor sit amet consectetur adipisicing elit?</h4>
+            <div class="faqBtn text-accent">
+              <i class="ri-add-fill text-2xl"></i>
+            </div>
+          </div>
+
+          <div class="faqText h-0 overflow-hidden transition-all duration-200 ease-in-out">
+            <p class="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt
+              perferendis vero tempore voluptates, aliquid magnam, aspernatur et delectus veritatis
+              distinctio doloribus, beatae praesentium? Nihil explicabo blanditiis possimus libero
+              aspernatur veritatis id aliquam sunt commodi dicta quod, dolorem error quis!</p>
+          </div>
+        </div>
+
+        <div class="faqItem px-[30px] pt-7 pb-4 border-b cursor-pointer select-none">
+
+          <div class="flex items-center justify-between mb-[10px]">
+            <h4 class="h4">Lorem ipsum, dolor sit amet consectetur adipisicing elit?</h4>
+            <div class="faqBtn text-accent">
+              <i class="ri-add-fill text-2xl"></i>
+            </div>
+          </div>
+
+          <div class="faqText h-0 overflow-hidden transition-all duration-200 ease-in-out">
+            <p class="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt
+              perferendis vero tempore voluptates, aliquid magnam, aspernatur et delectus veritatis
+              distinctio doloribus, beatae praesentium? Nihil explicabo blanditiis possimus libero
+              aspernatur veritatis id aliquam sunt commodi dicta quod, dolorem error quis!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter bg-accent md:h-[444px] py-12 flex items-center relative overflow-hidden">
+    <div class="absolute left-0 bottom-0">
+      <img src="assets/img/newsletter/pattern.svg" alt="newsletter">
+    </div>
+    <div class="newsletterContainer container mx-auto">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:gap-x-[58px]">
+        <div class="flex-1 z-10 text-center md:text-left">
+          <div class="text-base uppercase text-white tracking-[2.24px] font-medium">Newsletter</div>
+          <h1 class="h1 mb-4 text-white">Abonnez-vous pour recevoir nos mises à jour.</h1>
+        </div>
+        <form class="flex-1">
+          <div class="flex flex-col md:flex-row relative gap-y-4">
+            <input type="text" placeholder="Entrez votre email" class="rounded-full w-full h-[66px] bg-transparent border-2
+                            border-white outline-none pl-[30px] placeholder:text-white focus:text-white">
+            <button class="btn btn-lg btn-white md:absolute right-0">S'inscrire</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-12 xl:pt-[150px]">
+    <div class="container mx-auto pb-12 xl:pb-[100px]">
+      <div class="flex flex-col xl:flex-row gap-x-5 gap-y-10">
+        <div class="footerItem flex-1">
+          <a href="#">
+            <img src="assets/img/header/Medical_Research_logo.png" width="60" height="50" alt="logo">
+          </a>
+          <p class="mb-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, mollitia!</p>
+
+          <div class="flex flex-col gap-y-3 mb-10">
+            <div class="flex items-center gap-x-[6px]">
+              <i class="ri-map-pin-fill text-[24px] text-accent"></i>
+              <div>Cotonou,Littoral Bénin BP</div>
+            </div>
+            <div class="flex items-center gap-x-[6px]">
+              <i class="ri-mail-fill text-[24px] text-accent"></i>
+              <div>suport.suport@gmail.com</div>
+            </div>
+            <div class="flex items-center gap-x-[6px]">
+              <i class="ri-phone-fill text-[24px] text-accent"></i>
+              <div>(229) 0153947916</div>
+            </div>
+          </div>
+
+          <div class="flex gap-[14px] text-[30px]">
+            <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary
+                        hover:text-accent cursor-pointer transition-all">
+              <i class="ri-facebook-circle-fill"></i>
+            </div>
+            <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary
+                        hover:text-accent cursor-pointer transition-all">
+              <i class="ri-instagram-line"></i>
+            </div>
+            <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary
+                        hover:text-accent cursor-pointer transition-all">
+              <i class="ri-whatsapp-line"></i>
+            </div>
+            <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent-tertiary
+                        hover:text-accent cursor-pointer transition-all">
+              <i class="ri-linkedin-box-fill"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footerItem flex-1">
+          <h4 class="h4 mb-5">Liens rapides</h4>
+          <div class="flex gap-x-5">
+            <ul class="flex-1 flex flex-col gap-y-5">
+              <li>
+                <a href="#" class="hover:text-accent transition-all">Acceuil</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-all">Médecins</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-all">Départements</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-all">A propos</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-all">Services</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-all">Contact</a>
+              </li>
+            </ul>
+            <ul class="flex-1 flex flex-col gap-y-5">
+              <li>
+                <a href="#" class="hover:text-accent transition-all">Aide</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-all">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-all">Facs</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-all">Avis</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-all">Polique</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-all">Pro</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerItem flex-1">
+          <h4 class="h4 mb-5">Horaires d'ouverture</h4>
+          <div class="flex-1">
+            <div class="flex justify-between items-center border-b pb-[10px]">
+              <div>Lundi</div>
+              <div class="text-accent font-medium">8:00 - 17:00</div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex justify-between items-center border-b pb-[10px]">
+              <div>Mardi</div>
+              <div class="text-accent font-medium">8:00 - 17:00</div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex justify-between items-center border-b pb-[10px]">
+              <div>Mercredi</div>
+              <div class="text-accent font-medium">8:00 - 17:00</div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex justify-between items-center border-b pb-[10px]">
+              <div>Jeudi</div>
+              <div class="text-accent font-medium">8:00 - 17:00</div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex justify-between items-center border-b pb-[10px]">
+              <div>Vendredi</div>
+              <div class="text-accent font-medium">8:00 - 17:00</div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex justify-between items-center border-b pb-[10px]">
+              <div>Samedi</div>
+              <div class="text-accent font-medium">8:00 - 12:00</div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex justify-between items-center border-b pb-[10px]">
+              <div>Dimanche</div>
+              <div class="text-accent font-medium">Urgence seulement</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-[30px] border-t">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-secondary">© 2023 Dona. Tous droits réservés.</div>
+        <div class="text-secondary">Développé par <span class="text-accent">Chirac Dona Michoagan</span></div>
+      </div>
+    </div>
+  </footer>
+
+
+
+ <!-- <script src="js/swiper-bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script> -->
+   <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
