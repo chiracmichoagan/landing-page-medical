@@ -2,11 +2,20 @@
 
 Cette page d'accueil, créée avec le framework TailwindCSS, est conçue pour les cabinets médicaux et vise à offrir une expérience positive aux professionnels de santé et à leurs patients.
 
-![Capture du projet](/assets/img/readme/Capture.JPG)
+![Capture du projet](/assets/img/readme/image1.png)
+![Capture du projet](/assets/img/readme/image2.png)
+![Capture du projet](/assets/img/readme/image3.png)
+![Capture du projet](/assets/img/readme/image4.png)
+![Capture du projet](/assets/img/readme/image10.png)
+<!-- ![Capture du projet](/assets/img/readme/image5.png) -->
+![Capture du projet](/assets/img/readme/image6.png)
+![Capture du projet](/assets/img/readme/image7.png)
+![Capture du projet](/assets/img/readme/image8.png)
+![Capture du projet](/assets/img/readme/image9.png)
 
 ### 🎉 Déploiement
 
-[Lien de déploiement](https://insove-medical-healthcare.netlify.app/)
+[Lien de déploiement](https://landing-page-medical.vercel.app/)
 
 ### 🔨 Technologies utilisées
 
@@ -18,9 +27,9 @@ Cette page d'accueil, créée avec le framework TailwindCSS, est conçue pour le
 
 - `Scroll Reveal` - [Scroll Reveal](https://scrollrevealjs.org/)
 
-### 🎨 Suggestion de design
+<!-- ### 🎨 Suggestion de design -->
 
-[Design] [Suggestion](https://templatesjungle.com/downloads/insove-medical-healthcare-free-figma-website-template/)
+<!-- [Design] [Suggestion](https://templatesjungle.com/downloads/insove-medical-healthcare-free-figma-website-template/) -->
 
 ### Ressources supplémentaires
 
@@ -35,14 +44,14 @@ Cette page d'accueil, créée avec le framework TailwindCSS, est conçue pour le
 1. Clonez le dépôt sur votre machine locale :
 
 ``bash
-git clone https://github.com/nathanmota-dev/landing-page-insove-medical-healthcare
+git clone https://github.com/chiracmichoagan/landing-page-medical.git
 
 ``
 
 2. Accédez au répertoire du projet :
 
 ``bash
-cd landing-page-insove-medical-healthcare
+cd landing-page-medical
 
 ``
 
